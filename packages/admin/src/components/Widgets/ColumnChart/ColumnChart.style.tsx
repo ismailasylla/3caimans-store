@@ -52,5 +52,5 @@ export const SeriesText = styled('span', ({ $theme }) => ({
   ...$theme.typography.fontBold21,
   fontFamily: $theme.typography.primaryFontFamily,
   lineHeight: '1.2',
-  color: '#00C58D',
+  color: '#FFC300',
 }));

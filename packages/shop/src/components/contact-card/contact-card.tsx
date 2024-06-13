@@ -77,29 +77,29 @@ const CreateOrUpdateContact: React.FC<Props> = ({ item }) => {
                 /\d/,
                 /\d/,
               ]}
-              className='form-control'
-              placeholder='Enter a phone number'
+              className="form-control"
+              placeholder="Enter a phone number"
               guide={false}
-              id='my-input-id'
+              id="my-input-id"
               value={values.number}
               onChange={handleChange}
               onBlur={handleBlur}
-              name='number'
+              name="number"
               render={(ref: any, props: {}) => (
                 <StyledInput ref={ref} {...props} />
               )}
             />
           </FieldWrapper>
-          <ErrorMessage name='number' component={StyledError} />
+          <ErrorMessage name="number" component={StyledError} />
 
           <Button
             disabled={isSubmitting}
-            type='submit'
+            type="submit"
             style={{ width: '100%', height: '44px' }}
           >
             <FormattedMessage
-              id='savedContactId'
-              defaultMessage='Save Contact'
+              id="savedContactId"
+              defaultMessage="Save Contact"
             />
           </Button>
         </Form>
@@ -130,7 +130,7 @@ const StyledInput = styled.input`
   }
 
   &:focus {
-    border-color: ${themeGet('colors.primary.regular', '#009e7f')};
+    border-color: ${themeGet('colors.primary.regular', '#FFC300')};
   }
 
   &::placeholder {

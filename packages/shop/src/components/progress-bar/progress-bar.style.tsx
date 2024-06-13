@@ -22,7 +22,7 @@ const ProgressMeter = styled.span`
   position: absolute;
   top: 0;
   left: 0;
-  background-color: ${themeGet('colors.primary.regular', '#00C58D')};
+  background-color: ${themeGet('colors.primary.regular', '#FFC300')};
   border-radius: 9px;
 `;
 

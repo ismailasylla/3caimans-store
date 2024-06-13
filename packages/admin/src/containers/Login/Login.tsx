@@ -12,7 +12,7 @@ import {
 import { Wrapper, FormWrapper, LogoImage, LogoWrapper } from './Login.style';
 import Input from '../../components/Input/Input';
 import Button from '../../components/Button/Button';
-import Logoimage from '../../assets/image/PickBazar.png';
+import Logoimage from '../../assets/image/3caimans.png';
 
 const initialValues = {
   username: '',
@@ -52,7 +52,7 @@ export default () => {
             <Form>
               <FormFields>
                 <LogoWrapper>
-                  <LogoImage src={Logoimage} alt='pickbazar-admin' />
+                  <LogoImage src={Logoimage} alt="3Caimans-admin" />
                 </LogoWrapper>
                 <FormTitle>Log in to admin</FormTitle>
               </FormFields>
@@ -60,10 +60,10 @@ export default () => {
               <FormFields>
                 <FormLabel>Username</FormLabel>
                 <Field
-                  type='email'
-                  name='username'
+                  type="email"
+                  name="username"
                   component={MyInput}
-                  placeholder='Ex: demo@demo.com'
+                  placeholder="Ex: demo@demo.com"
                 />
                 {errors.username && touched.username && (
                   <Error>{errors.username}</Error>
@@ -72,17 +72,17 @@ export default () => {
               <FormFields>
                 <FormLabel>Password</FormLabel>
                 <Field
-                  type='password'
-                  name='password'
+                  type="password"
+                  name="password"
                   component={MyInput}
-                  placeholder='Ex: demo'
+                  placeholder="Ex: demo"
                 />
                 {errors.password && touched.password && (
                   <Error>{errors.password}</Error>
                 )}
               </FormFields>
               <Button
-                type='submit'
+                type="submit"
                 disabled={isSubmitting}
                 overrides={{
                   BaseButton: {

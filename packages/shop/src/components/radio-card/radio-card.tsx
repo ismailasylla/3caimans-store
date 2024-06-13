@@ -27,7 +27,7 @@ const CardWrapper = styled.label`
   transition: all 0.25s ease;
 
   &.active {
-    border: 1px solid ${themeGet('colors.primary.regular', '#009E7F')};
+    border: 1px solid ${themeGet('colors.primary.regular', '#FFC300')};
     background-color: ${themeGet('colors.white', '#ffffff')};
   }
 
@@ -107,7 +107,7 @@ const ActionButton = styled.span`
   color: ${themeGet('colors.white', '#ffffff')};
 
   &.edit-btn {
-    background-color: ${themeGet('colors.primary.regular', '#009E7F')};
+    background-color: ${themeGet('colors.primary.regular', '#FFC300')};
   }
   &.delete-btn {
     background-color: ${themeGet('colors.secondary.regular', '#ff5b60')};
@@ -159,7 +159,7 @@ const RadioCard: React.FC<RadioCardProps> = ({
       ${checked ? 'active' : 'not_active'}`}
     >
       <input
-        type='radio'
+        type="radio"
         id={`${name}-${id}`}
         name={name}
         value={content}
@@ -170,14 +170,14 @@ const RadioCard: React.FC<RadioCardProps> = ({
       {title && <CardTitle>{title}</CardTitle>}
       {content && <CardContent>{content}</CardContent>}
       {withActionButtons && (
-        <CardButtons className='button-wrapper'>
+        <CardButtons className="button-wrapper">
           {hasEdit && (
-            <ActionButton onClick={onEdit} className='edit-btn'>
+            <ActionButton onClick={onEdit} className="edit-btn">
               {editIcon}
             </ActionButton>
           )}
           {hasDelete && (
-            <ActionButton onClick={onDelete} className='delete-btn'>
+            <ActionButton onClick={onDelete} className="delete-btn">
               {deleteIcon}
             </ActionButton>
           )}

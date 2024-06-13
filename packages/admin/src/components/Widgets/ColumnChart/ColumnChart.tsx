@@ -111,7 +111,7 @@ const BarChart = ({
             </SeriesText>
             <LabelText>
               {position === 'up' ? (
-                <span style={{ color: '#00C58D' }}>
+                <span style={{ color: '#FFC300' }}>
                   <ArrowUp />
                 </span>
               ) : position === 'down' ? (
@@ -123,7 +123,7 @@ const BarChart = ({
                 ''
               )}
               <span style={{ marginLeft: 5 }}>
-                <span style={{ color: '#00C58D' }}>{percentage}</span>
+                <span style={{ color: '#FFC300' }}>{percentage}</span>
                 &nbsp;
                 {text}
               </span>
@@ -136,9 +136,9 @@ const BarChart = ({
         <Chart
           options={options.options}
           series={options.series}
-          height='350'
-          width='100%'
-          type='bar'
+          height="350"
+          width="100%"
+          type="bar"
         />
       </BoxContent>
     </Box>

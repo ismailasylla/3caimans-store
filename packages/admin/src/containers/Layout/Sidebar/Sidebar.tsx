@@ -88,7 +88,7 @@ export default withRouter(function Sidebar({
             key={index}
             exact={menu.exact}
             activeStyle={{
-              color: '#00C58D',
+              color: '#FFC300',
               backgroundColor: '#f7f7f7',
               borderRadius: '50px 0 0 50px',
             }}

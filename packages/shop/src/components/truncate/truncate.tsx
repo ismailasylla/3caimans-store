@@ -9,7 +9,7 @@ type ReadMoreProps = {
 const ReadMore = ({ children, more, less, character }) => {
   const [expanded, setExpanded] = useState(false);
 
-  const toggleLines = event => {
+  const toggleLines = (event) => {
     event.preventDefault();
     setExpanded(!expanded);
   };
@@ -28,7 +28,7 @@ const ReadMore = ({ children, more, less, character }) => {
             <a
               href="#"
               onClick={toggleLines}
-              style={{ color: '#009e7f', fontWeight: 700 }}
+              style={{ color: '#FFC300', fontWeight: 700 }}
             >
               {more}
             </a>
@@ -42,7 +42,7 @@ const ReadMore = ({ children, more, less, character }) => {
             <a
               href="#"
               onClick={toggleLines}
-              style={{ color: '#009e7f', fontWeight: 700 }}
+              style={{ color: '#FFC300', fontWeight: 700 }}
             >
               {less}
             </a>

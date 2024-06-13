@@ -18,7 +18,7 @@ const SingleItem = styled.li`
   }
 
   &.custom-dot--active {
-    border: 2px solid ${themeGet('colors.primary.regular', '#009E7F')};
+    border: 2px solid ${themeGet('colors.primary.regular', '#FFC300')};
   }
 `;
 const responsive = {
@@ -62,7 +62,7 @@ const CarouselWithCustomDots = ({
         position: 'relative',
         margin: 'auto',
       }}
-      className='product-image'
+      className="product-image"
     />
   ));
   const images = items.map((item: any, index: number) => (
@@ -103,7 +103,7 @@ const CarouselWithCustomDots = ({
       ssr
       infinite={true}
       slidesToSlide={1}
-      containerClass='carousel-with-custom-dots'
+      containerClass="carousel-with-custom-dots"
       responsive={responsive}
       deviceType={deviceType}
       autoPlay={false}

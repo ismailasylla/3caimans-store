@@ -4,8 +4,8 @@ export const theme = createTheme(
   {
     ...lightThemePrimitives,
     primaryFontFamily: "'Lato', sans-serif",
-    primary: '#00C58D',
-    primary700: '#00bd87',
+    primary: '#FFC300',
+    primary700: '#CD6F10',
   },
   {
     name: 'custom-typography',
@@ -147,8 +147,8 @@ export const theme = createTheme(
       },
     },
     colors: {
-      primary: '#00C58D',
-      primary700: '#00bd87',
+      primary: '#FFC300',
+      primary700: '#CD6F10',
       primary400: '#03D3B5',
       red400: '#FC5C63',
       red700: '#FC6687',
