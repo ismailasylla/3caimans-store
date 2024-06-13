@@ -1,8 +1,8 @@
 {
-  "name": "pick-bazar",
+  "name": "3caimans-store",
   "version": "3.0.3",
   "private": true,
-  "author": "RedQ, Inc.",
+  "author": "isamaila sylla",
   "workspaces": [
     "packages/*"
   ],
@@ -12,12 +12,12 @@
     "dev:shop": "lerna run --parallel shop-dev",
     "build:shop": "yarn workspace @pick-bazar/shop build",
     "serve:shop": "lerna run --parallel start",
-    "dev:admin": "concurrently \"yarn workspace @pick-bazar/admin dev\" \"yarn workspace @pick-bazar/api admin\"",
-    "build:admin": "yarn workspace @pick-bazar/admin build",
-    "serve:admin": "lerna run --parallel serve",
-    "dev:api-shop": "yarn workspace @pick-bazar/api shop-dev",
-    "dev:api-admin": "yarn workspace @pick-bazar/api admin",
-    "build:api": "yarn workspace @pick-bazar/api build"
+    "dev:admin": "NODE_OPTIONS=--openssl-legacy-provider concurrently \"yarn workspace @pick-bazar/admin dev\" \"yarn workspace @pick-bazar/api admin\"",
+    "build:admin": "NODE_OPTIONS=--openssl-legacy-provider yarn workspace @pick-bazar/admin build",
+    "serve:admin": "NODE_OPTIONS=--openssl-legacy-provider lerna run --parallel serve",
+    "dev:api-shop": "NODE_OPTIONS=--openssl-legacy-provider yarn workspace @pick-bazar/api shop-dev",
+    "dev:api-admin": "NODE_OPTIONS=--openssl-legacy-provider yarn workspace @pick-bazar/api admin",
+    "build:api": "NODE_OPTIONS=--openssl-legacy-provider yarn workspace @pick-bazar/api build"
   },
   "devDependencies": {
     "concurrently": "^5.2.0",
@@ -37,5 +37,8 @@
     "*.{js,md,css}": [
       "prettier --trailing-comma es5 --single-quote --write"
     ]
+  },
+  "engines": {
+    "node": "20.14.0"
   }
 }
