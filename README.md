@@ -129,7 +129,7 @@ vercel
 ### Admin
 
 - After deploying the api you will get the api endpoint url. Put that url in the `packages/admin/.env`
-- also need to put it within `vercel.json` .
+- also need to put it within `vercel.json`
 
 ```
 REACT_APP_API_URL={put_your_api_url_here}/admin/graphql;
