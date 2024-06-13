@@ -1,15 +1,10 @@
 import localEn from './lang/en.json';
+import localFr from './lang/fr.json';
 import localAr from './lang/ar.json';
-import localEs from './lang/es.json';
-import localDe from './lang/de.json';
 import localCn from './lang/zh.json';
-import localIl from './lang/he.json';
-
 export const messages = {
   en: localEn,
+  fr: localFr,
   ar: localAr,
-  es: localEs,
-  de: localDe,
   zh: localCn,
-  he: localIl,
 };

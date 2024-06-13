@@ -165,18 +165,7 @@ export const LANGUAGE_MENU = [
     icon: 'USFlag',
   },
   {
-    id: 'de',
-    defaultMessage: 'German',
-    icon: 'DEFlag',
-  },
-  {
-    id: 'he',
-    defaultMessage: 'Hebrew',
-    icon: 'ILFlag',
-  },
-  {
-    id: 'es',
-    defaultMessage: 'Spanish',
-    icon: 'ESFlag',
-  },
+    id: 'fr',
+    defaultMessage: 'French',
+    icon: 'FRFlag',}
 ];
