@@ -3,10 +3,10 @@
   "version": "3.0.3",
   "private": true,
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start",
-    "shop-dev": "next"
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider next",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider next build",
+    "start": "NODE_OPTIONS=--openssl-legacy-provider next start",
+    "shop-dev": "NODE_OPTIONS=--openssl-legacy-provider next"
   },
   "dependencies": {
     "@apollo/react-hooks": "3.1.5",
