@@ -1,4 +1,4 @@
-# PickBazar Documentation
+# Documentation
 
 # Introduction
 
